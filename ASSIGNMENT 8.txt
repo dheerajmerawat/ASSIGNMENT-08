@@ -1,0 +1,739 @@
+Assignment-8: Star Pattern Problems
+1. Write a program to draw the following patterns:
+*
+**
+***
+****
+*****
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j<=i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+2.
+    *
+   **
+  ***
+ ****
+*****
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j>=6-i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+3.
+*****
+****
+***
+**
+*
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+                if(j<=6-i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+s4.
+
+*****
+ ****
+  ***
+   **
+    *
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+                if(j>=i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+5.
+    *
+   ***
+  *****
+ *******
+*********
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=9;j++)
+        {
+            if(j>=6-i && j<=4+i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+6.
+
+*********
+ *******
+  *****
+   ***
+    *
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=9;j++)
+        {
+            if(j>=i && j<=10-i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+7.
+
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=10;j++)
+        {
+            if(j<=6-i || j>=5+i)
+            {
+
+
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+
+    }
+    return 0;
+}
+
+
+8.
+
+
+   1
+  121
+ 12321
+1234321
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+
+
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        for(j=1;j<=7;j++)
+        {
+            if(j>=5-i && j<=3+i)
+            {
+
+
+                printf("%d",k);
+                j<4?k++:k--;
+
+            }
+            else
+            {
+                printf(" ");
+
+            }
+
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+9.
+
+1234321
+ 12321
+  121
+   1
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        for(j=1;j<=7;j++)
+        {
+            if(j>=i && j<=8-i)
+            {
+             printf("%d",k);
+             j<4?k++:k--;
+            }
+            else
+            {
+                printf(" ");
+            }
+
+
+
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+10.
+1234321
+123 321
+12   21
+1     1
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+
+          for(j=1;j<=7;j++)
+        {
+            if(j<=5-i  || j>=3+i )
+            {
+                printf("%d",k);
+                j<4?k++:k--;
+
+
+
+            }
+            else
+            {
+                printf(" ");
+                if(j==4)
+
+                    k--;
+
+
+            }
+
+        }
+        printf("\n");
+
+    }
+    return 0;
+}
+
+
+11.
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=5;i++)
+    {
+        k='A';
+        for(j=1;j<=9;j++)
+        {
+            if(j>=6-i && j<=4+i)
+            {
+             printf("%c",k);
+              j<5?k++:k--;
+            }
+            else
+            {
+                printf(" ");
+
+            }
+
+    }
+
+    printf("\n");
+}
+return 0;
+}
+
+12.
+
+ABCDCBA
+ ABCBA
+  ABA
+   A
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=4;i++)
+    {
+        k='A';
+        for(j=1;j<=7;j++)
+        {
+            if(j>=i && j<=8-i)
+            {
+                printf("%c",k);
+                j<4?k++:k--;
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+13.
+
+ABCDEFGFEDCBA
+ABCDEF FEDCBA
+ABCDE   EDCBA
+ABCD     DCBA
+ABC       CBA
+AB         BA
+A           A
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=7;i++)
+    {
+        k='A';
+        for(j=1;j<=13;j++)
+        {
+            if(j<=8-i || j>=6+i)
+            {
+                printf("%c",k);
+                j<7?k++:k--;
+            }
+            else
+            {
+                printf(" ");
+                if(j==7)
+                    k--;
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+14.
+*
+**
+* *
+*  *
+*****
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j>=1 && j<=1|| j>=i&&j<=i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    for(i=1;i<=1;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j>=1 && j<=5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+
+    }
+
+
+
+}
+
+15.
+    *
+   **
+  * *
+ *  *
+*****
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j>=6-i && j<=6-i || j>=5 && j<=5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    for(i=1;i<=1;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(j>=1&&j<=5)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
+
+
+16.
+
+    *
+   * *
+  *   *
+ *     *
+*********
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=4;i++)
+    {
+        for(j=1;j<=9;j++)
+        {
+            if(j>=6-i && j<=6-i || j>=4+i && j<=4+i)
+            {
+                printf("*");
+
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    for(i=1;i<=1;i++)
+    {
+        for(j=1;j<=9;j++)
+        {
+            if(j>=1&&j<=9)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+
+    }
+
+}
+
+17.
+
+*********
+ *     *
+  *   *
+   * *
+    *
+
+#include<stdio.h>
+int main()
+{
+
+
+int i,j;
+
+for(i=1;i<=1;i++)
+{
+    for(j=1;j<=9;j++)
+    {
+        if(j>=1 && j<=9)
+        {
+         printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+
+    }
+    printf("\n");
+}
+
+
+for(i=1;i<=4;i++)
+{
+    for(j=1;j<=9;j++)
+    {
+        if(j>=i+1 && j<=i+1 || j>=9-i && j<=9-i)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+
+    }
+    printf("\n");
+}
+
+}
+
+
+18.
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+#include<stdio.h>
+int main()
+{
+int i,j,k=0;
+for(i=1;i<=9;i++)
+{
+i<=5?k++:k--;
+    for(j=1;j<=9;j++)
+    {
+
+        if(j>=6-k && j<=4+k)
+        {
+            printf("*");
+
+        }
+        else
+        {
+            printf(" ");
+
+
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+19.
+
+ *****     *****
+ *******   *******
+********* *********
+*******************
+ *****************
+  ***************
+   *************
+    ***********
+     *********
+      *******
+       *****
+        ***
+         *
+
+
+
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for(i=1;i<=3;i++)
+    {
+        for(j=1;j<=19;j++)
+        {
+            if(j>=4-i && j<=6+i || j>=14-i && j<=16+i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+
+    }
+
+
+    for(i=1;i<=10;i++)
+{
+    for(j=1;j<=19;j++)
+    {
+        if(j>=i &&j<=20-i)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+    }
+    printf("\n");
+}
+}
